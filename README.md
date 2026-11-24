@@ -8,7 +8,7 @@
 
 *« Nos pères ont écrit les premières pages.<br>À nous de faire en sorte que leur histoire ne s'arrête jamais. »*
 
-[Le club](#le-club) · [Les membres](#les-membres) · [Nos valeurs](#nos-valeurs) · [Le Tumbleweed](#le-tumbleweed) · [Rejoindre](#rejoindre) · [Le site](#le-site)
+[Le club](#le-club) · [Les membres](#les-membres) · [Nos valeurs](#nos-valeurs) · [Les lois](#les-lois) · [Le Tumbleweed](#le-tumbleweed) · [Rejoindre](#rejoindre) · [Le site](#le-site)
 
 <img src="assets/img/photos/route-grapeseed.webp" alt="Un biker aux couleurs des Dust Devils devant sa moto, au coucher du soleil">
 
@@ -51,6 +51,19 @@ Marty est mort. Earl a laissé le premier plan à la nouvelle génération. Rick
 - **La fraternité.** Un frère ne se laisse jamais tomber.
 - **Les actes.** On assume ses erreurs.
 
+## Les lois
+
+1. Fraternité, respect, loyauté
+2. Les couleurs du club
+3. La famille et les proches
+4. La loi du silence
+5. Le respect des civils
+6. Le respect des femmes
+7. Interdiction des stupéfiants au sein du club
+8. Discipline et hiérarchie
+
+Le texte complet est sur la page `lois.html` du site.
+
 ## Le Tumbleweed
 
 <img src="assets/img/logos/tumbleweed.webp" width="260" align="right" alt="Enseigne du Tumbleweed Saloon">
@@ -90,6 +103,7 @@ HTML, CSS et JavaScript, sans installation. Ouvre `index.html` dans un navigateu
 | Changer le menu, les grades, le lien Discord | `js/data/site.js` |
 | Modifier ou ajouter un membre | `js/data/membres.js` + photo dans `assets/img/membres/` |
 | Modifier l'histoire d'un membre | `js/data/histoires/<id>.js` |
+| Modifier les lois | `js/data/lois.js` |
 | Ajouter une photo à la galerie | `js/data/galerie.js` + `assets/img/photos/` |
 | Changer couleurs, polices, espacements | `css/base/variables.css` |
 | Changer le style d'une page | `css/pages/<page>.css` |

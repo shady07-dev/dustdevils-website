@@ -8,6 +8,7 @@ DD.site = {
   menu: [
     { page: "index", titre: "Accueil" },
     { page: "club", titre: "Le club" },
+    { page: "lois", titre: "Les lois" },
     { page: "membres", titre: "Membres" },
     { page: "tumbleweed", titre: "Tumbleweed" },
     { page: "galerie", titre: "Galerie" },

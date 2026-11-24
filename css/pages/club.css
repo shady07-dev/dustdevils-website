@@ -20,3 +20,4 @@
 .rangs a { text-underline-offset: 4px; }
 .rangs a:hover { color: var(--poussiere); }
 @media (min-width: 56rem) { .rangs li { grid-template-columns: 13rem 1fr 13rem; } .rang__nom { text-align: right; } }
+.suite-lois { margin-top: 3rem; }

@@ -7,3 +7,4 @@
 .porte { position: relative; isolation: isolate; overflow: clip; background: var(--marine); padding-block: clamp(5rem, 10vw, 8rem); }
 .porte canvas { position: absolute; inset: 0 0 0 auto; width: min(100%, 48rem); height: 100%; z-index: -1; }
 .porte .duo > img { width: min(75%, 22rem); margin-inline: auto; }
+.suite-lois { margin-top: 3rem; }
