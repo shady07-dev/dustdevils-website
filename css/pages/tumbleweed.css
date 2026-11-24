@@ -1,0 +1,6 @@
+/* Le saloon garde le marine du club, réchauffé par le bois de l'enseigne. */
+.banniere { --cadre: center 30%; min-height: min(88vh, 48rem); }
+.enseigne { width: min(100%, 30rem); margin-inline: auto; }
+.rituel { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 2rem; }
+.rituel li { display: grid; gap: 0.4rem; align-content: start; border-top: 2px dashed currentColor; padding-top: 1.1rem; }
+.rituel strong { font: 400 clamp(1.5rem, 2.6vw, 2rem)/1.2 var(--titre); }

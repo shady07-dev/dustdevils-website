@@ -1,0 +1,9 @@
+.banniere { --cadre: center 40%; }
+.etapes { display: grid; gap: 2.5rem; counter-reset: e; grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr)); }
+.etapes li { counter-increment: e; display: grid; gap: 0.6rem; align-content: start; }
+.etapes li::before { content: counter(e); font: 400 3.4rem/1 var(--titre); color: var(--marine-vif); }
+.places { display: flex; flex-wrap: wrap; gap: 1rem; }
+.places .patch { width: min(100%, 17rem); }
+.porte { position: relative; isolation: isolate; overflow: clip; background: var(--marine); padding-block: clamp(5rem, 10vw, 8rem); }
+.porte canvas { position: absolute; inset: 0 0 0 auto; width: min(100%, 48rem); height: 100%; z-index: -1; }
+.porte .duo > img { width: min(75%, 22rem); margin-inline: auto; }

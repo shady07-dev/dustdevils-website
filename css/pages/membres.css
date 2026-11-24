@@ -1,0 +1,20 @@
+.banniere { --cadre: center 55%; }
+
+/* --- Arbre des deux familles --- */
+.arbre { display: grid; gap: 1.5rem; }
+.famille { display: grid; gap: 1.25rem; }
+.famille > h3 { font: 400 1.6rem/1 var(--titre); }
+.generation { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.parente { display: block; padding: 1.1rem 1.25rem; border: 2px solid var(--marine); border-radius: 3px; text-decoration: none; background: #fff; }
+.parente strong { display: block; font: 400 1.25rem/1.3 var(--sous-titre); }
+.parente--defunt { border-style: dashed; background: none; }
+a.parente:hover { background: var(--marine); color: var(--toile); }
+.lien-freres { align-self: center; text-align: center; font: 400 1.1rem/1.3 var(--sous-titre); padding-block: 0.5rem; }
+@media (min-width: 56rem) {
+  .arbre { grid-template-columns: 1.6fr 9rem 1fr; align-items: stretch; }
+  .famille { grid-template-rows: auto 1fr 1fr; }
+  .lien-freres--tous { display: grid; grid-template-rows: auto 1fr 1fr; gap: 1.25rem; align-self: stretch; }
+  .lien-freres--tous::before { content: ""; height: 1.6rem; }
+  .lien-freres--tous span { display: grid; place-content: center; border-block: 2px dashed transparent; }
+}
+.lien-freres span { display: block; }

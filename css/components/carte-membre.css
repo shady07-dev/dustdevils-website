@@ -1,0 +1,16 @@
+.equipe { display: grid; gap: 2.5rem 1.5rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15.5rem), 1fr)); }
+.carte-membre { display: grid; grid-template-rows: auto auto auto 1fr; text-decoration: none; justify-items: start; }
+.carte-membre__photo { width: 100%; aspect-ratio: 4 / 5; overflow: clip; background: var(--cuir); }
+.carte-membre__photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(0.75); transition: scale 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), filter 0.4s; }
+.carte-membre:hover img { filter: none; }
+.carte-membre:hover .carte-membre__photo img { scale: 1.06; }
+/* Patchs cousus à cheval sur le bas de la photo */
+.carte-membre__patchs { display: flex; align-items: center; gap: 0.4rem; margin: -1.15rem 0.9rem 1rem; min-height: 2.3rem; position: relative; }
+.carte-membre__patchs .patch { width: 10.2rem; flex: 0 1 auto; min-width: 0; }
+.carte-membre__patchs .patch--texte { font-size: 1.02rem; border-width: 3px; }
+.carte-membre__nom { font: 400 1.55rem/1.15 var(--titre); margin-bottom: 0.5rem; }
+.carte-membre__texte { color: var(--brume); line-height: 1.5; }
+.carte-membre:hover .carte-membre__nom { color: var(--poussiere); }
+
+/* Membre sans photo : diable du club sur fond marine */
+img.sans-photo, .carte-membre__photo img.sans-photo, .dossier__photo img.sans-photo, .liens img.sans-photo { object-fit: contain; object-position: center; padding: 14%; background: var(--marine); filter: none; }

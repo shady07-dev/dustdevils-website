@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les membres | Dust Devils MC</title>
+  <meta name="description" content="Les membres du Dust Devils MC : Rick Anderson, Travis Cooper, Earl Cooper et Mike Armstrong.">
+  <meta name="theme-color" content="#050a1e">
+  <link rel="icon" href="assets/img/logos/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/membres.css">
+</head>
+<body data-page="membres">
+  <main id="contenu">
+    <section class="banniere">
+      <img class="banniere__photo" src="assets/img/photos/bureau.webp" alt="">
+      <div class="conteneur"><h1>Les membres</h1><p class="chapo">Peu de monde autour de la table, mais des gens sur qui compter.</p></div>
+    </section>
+
+    <section class="section"><div class="conteneur"><div class="equipe" id="equipe"></div></div></section>
+
+    <section class="section clair">
+      <div class="conteneur">
+        <div class="section__tete"><h2>Deux familles, un club</h2><p class="chapo">Les Anderson et les Cooper, de la guerre du Golfe à aujourd'hui.</p></div>
+        <div class="arbre" data-apparait>
+          <div class="famille">
+            <h3>Anderson</h3>
+            <div class="generation"><div class="parente parente--defunt"><strong>Marty Anderson</strong>Fondateur et premier président, décédé</div></div>
+            <div class="generation"><a class="parente" href="membre.html?id=rick"><strong>Rick Anderson</strong>Son fils, président</a><a class="parente" href="membre.html?id=mike"><strong>Mike Armstrong</strong>Son neveu, sergent d'armes</a></div>
+          </div>
+          <div class="lien-freres lien-freres--tous"><span>Frères d'armes</span><span>Frères de cœur</span></div>
+          <div class="famille">
+            <h3>Cooper</h3>
+            <div class="generation"><a class="parente" href="membre.html?id=earl"><strong>Earl Cooper</strong>Fondateur, secrétaire</a></div>
+            <div class="generation"><a class="parente" href="membre.html?id=travis"><strong>Travis Cooper</strong>Son fils, vice-président</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data/site.js"></script>
+  <script src="js/data/membres.js"></script>
+  <script src="js/components/outils.js"></script>
+  <script src="js/components/layout.js"></script>
+  <script src="js/pages/membres.js"></script>
+  <script src="js/components/apparition.js"></script>
+</body>
+</html>

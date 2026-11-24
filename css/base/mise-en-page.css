@@ -1,0 +1,18 @@
+.conteneur { width: 100%; max-width: calc(var(--largeur) + 2 * var(--gouttiere)); margin-inline: auto; padding-inline: var(--gouttiere); }
+.section { padding-block: var(--section); }
+.section__tete { display: grid; gap: 1rem; margin-bottom: clamp(2rem, 4vw, 3.5rem); }
+/* Section "toile de patch" : fond blanc, encre marine */
+.clair { background: var(--toile); color: var(--marine); }
+.clair :focus-visible { outline-color: var(--marine-vif); }
+.duo { display: grid; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.duo > * { min-width: 0; }
+.pile { display: grid; gap: 1.2rem; justify-items: start; align-content: center; }
+@media (min-width: 56rem) { .duo { grid-template-columns: 1fr 1fr; } }
+
+.citation-bande { padding-block: clamp(3.5rem, 8vw, 6rem); background: var(--marine); }
+.citation-bande blockquote { font: 400 clamp(1.4rem, 3.2vw, 2.4rem)/1.35 var(--sous-titre); text-wrap: balance; }
+
+[data-apparait] { transition: opacity 0.7s ease, translate 0.7s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.a-venir { opacity: 0; translate: 0 2rem; }
+.evitement { position: fixed; z-index: 60; top: 0.5rem; left: 0.5rem; padding: 0.5rem 1rem; background: var(--toile); color: var(--marine); translate: 0 -200%; }
+.evitement:focus { translate: 0; }

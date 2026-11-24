@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dust Devils MC | Grapeseed</title>
+  <meta name="description" content="Site du Dust Devils MC, club de bikers 1% RP de Grapeseed, Blaine County.">
+  <meta name="theme-color" content="#050a1e">
+  <link rel="icon" href="assets/img/logos/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pages/index.css">
+</head>
+<body data-page="index">
+  <main id="contenu">
+    <section class="hero">
+      <img class="hero__photo" src="assets/img/photos/route-grapeseed.webp" alt="Un biker de dos portant les couleurs des Dust Devils devant sa moto, au coucher du soleil">
+      <canvas data-poussiere="vent" aria-hidden="true"></canvas>
+      <div class="conteneur hero__texte">
+        <h1>Dust Devils</h1>
+        <p class="chapo">Un club 1% de Grapeseed, fondé par deux frères d'armes et relevé par leurs fils.</p>
+        <div class="boutons"><a class="bouton" href="club.html">L'histoire du club</a><a class="bouton bouton--contour" href="rejoindre.html">Rejoindre</a></div>
+      </div>
+    </section>
+
+    <section class="section clair origine">
+      <div class="conteneur duo">
+        <img src="assets/img/logos/patch-complet.webp" width="1000" height="1028" alt="Patch du club : un diable dans une tornade, Dust Devils MC, Grapeseed, 1%" loading="lazy" data-apparait>
+        <div class="pile">
+          <h2>Construit par les pères. Repris par les fils.</h2>
+          <p>Earl Cooper et Marty Anderson ont grandi ensemble à Blaine County, fait la guerre du Golfe ensemble, puis fondé le Dust Devil MC. Pour eux, le club était un engagement, une parole donnée et des hommes sur lesquels compter.</p>
+          <p>Marty est mort. Son fils Rick a pris la présidence, avec Travis Cooper à ses côtés. Ils reconstruisent le club depuis ses fondations.</p>
+          <a class="bouton" href="club.html">Lire la suite</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="conteneur">
+        <div class="section__tete"><h2>Ceux qui portent le patch</h2></div>
+        <div class="equipe" id="equipe" data-apparait></div>
+      </div>
+    </section>
+
+    <section class="citation-bande">
+      <blockquote class="conteneur" data-apparait>« Nos pères ont écrit les premières pages. À nous de faire en sorte que leur histoire ne s'arrête jamais. »</blockquote>
+    </section>
+
+    <section class="section saloon">
+      <div class="conteneur duo">
+        <div class="pile">
+          <h2>On se retrouve au Tumbleweed</h2>
+          <p class="chapo">Le saloon d'Earl. Un comptoir en bois, des bouteilles alignées, les membres du club et les habitués de la région.</p>
+          <a class="bouton" href="tumbleweed.html">Pousser la porte</a>
+        </div>
+        <div class="saloon__photo" data-apparait>
+          <img src="assets/img/photos/tumbleweed.webp" width="1498" height="1050" alt="Earl Cooper, bras croisés, devant la façade en bois du Tumbleweed" loading="lazy">
+          <img class="saloon__enseigne" src="assets/img/logos/tumbleweed.webp" width="900" height="597" alt="" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="appel">
+      <canvas data-poussiere="tourbillon" aria-hidden="true"></canvas>
+      <div class="conteneur duo">
+        <div class="pile">
+          <h2>La fraternité se mérite</h2>
+          <p class="chapo">Le club cherche de nouveaux membres. Le temps, les actes et la confiance feront le reste.</p>
+          <div class="boutons"><a class="bouton" href="rejoindre.html">Devenir prospect</a><span data-discord="Rejoindre le Discord"></span></div>
+        </div>
+        <img class="appel__devil" src="assets/img/logos/diable.webp" width="650" height="722" alt="" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data/site.js"></script>
+  <script src="js/data/membres.js"></script>
+  <script src="js/components/outils.js"></script>
+  <script src="js/components/layout.js"></script>
+  <script src="js/components/poussiere.js"></script>
+  <script src="js/pages/index.js"></script>
+  <script src="js/components/apparition.js"></script>
+</body>
+</html>

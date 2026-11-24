@@ -1,0 +1,12 @@
+/* Styles communs à toutes les pages. Chaque page ajoute ensuite css/pages/<page>.css */
+@import "base/polices.css";
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/typographie.css";
+@import "base/mise-en-page.css";
+@import "components/entete.css";
+@import "components/pied.css";
+@import "components/patch.css";
+@import "components/bouton.css";
+@import "components/banniere.css";
+@import "components/carte-membre.css";

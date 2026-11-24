@@ -1,0 +1,21 @@
+/* Palette tirée du patch (marine + blanc) et du désert de Blaine County. */
+:root {
+  --nuit: #050a1e;
+  --cuir: #0a1230;
+  --marine: #00104f;
+  --marine-vif: #2340a8;
+  --toile: #f3f4f8;
+  --brume: #b4bdd8;
+  --poussiere: #e2b98a;
+  --couture: rgb(180 189 216 / 0.28);
+
+  --titre: "Rye", "Rockwell", serif;
+  --sous-titre: "Bree Serif", "Rockwell", serif;
+  --texte: "Barlow", "Segoe UI", sans-serif;
+  --etiquette: "Barlow Condensed", "Arial Narrow", sans-serif;
+
+  --gouttiere: clamp(1.1rem, 4vw, 3rem);
+  --largeur: 76rem;
+  --section: clamp(4rem, 9vw, 7.5rem);
+  --entete: 4.75rem;
+}

@@ -1,0 +1,17 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { color-scheme: dark; scroll-behavior: smooth; scroll-padding-top: calc(var(--entete) + 1rem); }
+body { background: var(--nuit); color: var(--toile); min-height: 100svh; overflow-x: clip; }
+img, canvas { display: block; max-width: 100%; }
+img { height: auto; }
+ul, ol { padding: 0; list-style: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--poussiere); outline-offset: 3px; }
+::selection { background: var(--poussiere); color: var(--marine); }
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  @view-transition { navigation: none; }
+}

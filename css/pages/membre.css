@@ -1,0 +1,42 @@
+/* --- Ouverture du dossier --- */
+.dossier { padding-block: calc(var(--entete) + 2.5rem) clamp(3rem, 6vw, 5rem); background: linear-gradient(to right, var(--marine), var(--nuit) 75%); }
+.dossier__grille { display: grid; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.dossier__photo { border: 8px solid var(--toile); outline: 2px dashed var(--brume); outline-offset: 6px; margin: 8px; max-width: 30rem; }
+.dossier__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.dossier__texte { display: grid; gap: 1.4rem; justify-items: start; min-width: 0; }
+.dossier__patchs { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.dossier dl { display: grid; width: 100%; }
+.dossier dl div { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding-block: 0.5rem; border-bottom: 2px dashed var(--couture); }
+.dossier dt { color: var(--poussiere); }
+.dossier dd { margin: 0; }
+.traits { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.traits li { padding: 0.2rem 0.75rem; border: 1px solid var(--brume); border-radius: 3px; font: 600 1.05rem/1.4 var(--etiquette); }
+.retour { color: var(--brume); text-underline-offset: 4px; }
+@media (min-width: 56rem) { .dossier__grille { grid-template-columns: 5fr 7fr; } }
+
+/* --- Récit et sommaire --- */
+.histoire { padding-block: var(--section); }
+.histoire__grille { display: grid; gap: 3rem; }
+.histoire__texte { display: grid; gap: 4rem; min-width: 0; }
+.histoire article { display: grid; gap: 1.1rem; }
+.histoire h2 { margin-bottom: 0.4rem; font-size: clamp(1.6rem, 3vw, 2.3rem); }
+.histoire p, .histoire li { font-size: 1.125rem; }
+.histoire__texte li { padding-left: 1.4rem; position: relative; }
+.histoire__texte li::before { content: ""; position: absolute; left: 0; top: 0.65em; width: 0.5rem; height: 0.5rem; background: var(--marine); rotate: 45deg; }
+.histoire blockquote { padding: 1.4rem 1.6rem; border: 2px dashed var(--marine); font: 400 1.3rem/1.5 var(--sous-titre); max-width: 46rem; }
+.sommaire li { border-bottom: 1px solid rgb(0 16 79 / 0.2); }
+.sommaire a { display: block; padding: 0.6rem 0; text-decoration: none; line-height: 1.35; }
+.sommaire a:hover { text-decoration: underline; }
+.sommaire a[aria-current] { font-weight: 600; color: var(--marine-vif); }
+@media (min-width: 56rem) {
+  .histoire__grille { grid-template-columns: 16rem 1fr; gap: 5rem; }
+  .sommaire ol { position: sticky; top: calc(var(--entete) + 2rem); }
+}
+
+/* --- Liens et suite --- */
+.liens { display: grid; gap: 1rem; margin-block: 2rem 3rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
+.liens a { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--brume); }
+.liens img { width: 5.5rem; height: 5.5rem; object-fit: cover; object-position: top; }
+.liens strong { display: block; font: 400 1.25rem/1.3 var(--sous-titre); color: var(--toile); }
+.liens a:hover strong { color: var(--poussiere); }
+.introuvable { padding-block: 10rem; display: grid; gap: 1.5rem; justify-items: start; }

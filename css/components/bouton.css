@@ -1,0 +1,10 @@
+/* Bouton façon patch cousu */
+.bouton { display: inline-block; position: relative; padding: 0.95rem 1.7rem; background: var(--toile); color: var(--marine); font: 400 1.1rem/1.2 var(--sous-titre); text-decoration: none; border-radius: 3px; transition: background-color 0.2s, translate 0.2s; }
+.bouton::after { content: ""; position: absolute; inset: 4px; border: 1.5px dashed currentColor; border-radius: 2px; opacity: 0.45; pointer-events: none; }
+.bouton:hover { background: var(--poussiere); translate: 0 -2px; }
+.clair .bouton { background: var(--marine); color: var(--toile); }
+.clair .bouton:hover { background: var(--marine-vif); }
+.bouton--contour { background: rgb(5 10 30 / 0.55); color: var(--toile); }
+.bouton--contour:hover { background: var(--marine); }
+.bouton--inactif, .bouton--inactif:hover { opacity: 0.65; translate: none; background: var(--brume); }
+.boutons { display: flex; flex-wrap: wrap; gap: 0.9rem; }

@@ -1,0 +1,22 @@
+/* --- Récit : une route qui se trace au défilement --- */
+.route { --avance: 0; position: relative; display: grid; gap: clamp(2.5rem, 5vw, 4rem); padding-left: clamp(2.2rem, 6vw, 5rem); }
+.route::before, .route::after { content: ""; position: absolute; left: 0.5rem; top: 0; bottom: 0; width: 4px; background: repeating-linear-gradient(var(--couture) 0 22px, transparent 22px 40px); }
+.route::after { background: repeating-linear-gradient(var(--poussiere) 0 22px, transparent 22px 40px); clip-path: inset(0 0 calc(100% - var(--avance) * 100%) 0); }
+.etape { display: grid; gap: 0.6rem; }
+.etape__date { font: 400 clamp(1.5rem, 3vw, 2.1rem)/1 var(--titre); color: var(--poussiere); }
+.etape p { color: var(--brume); }
+@media (min-width: 56rem) { .etape { grid-template-columns: 15rem 1fr; column-gap: 2rem; } .etape__date { grid-row: span 2; } .etape p { grid-column: 2; } }
+
+/* --- Valeurs --- */
+.valeurs { display: grid; gap: 2rem clamp(2rem, 5vw, 5rem); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.valeurs li { border-top: 2px dashed currentColor; padding-top: 1.1rem; display: grid; gap: 0.35rem; align-content: start; }
+.valeurs h3 { font-size: 1.6rem; }
+
+/* --- Hiérarchie --- */
+.rangs li { display: grid; gap: 0.6rem 2rem; align-items: center; padding-block: 1.3rem; border-bottom: 2px dashed var(--couture); }
+.rangs p { color: var(--brume); }
+.rangs strong { display: block; font: 400 1.25rem/1.3 var(--sous-titre); color: var(--toile); }
+.rangs .rang__nom { color: var(--toile); font-weight: 600; }
+.rangs a { text-underline-offset: 4px; }
+.rangs a:hover { color: var(--poussiere); }
+@media (min-width: 56rem) { .rangs li { grid-template-columns: 13rem 1fr 13rem; } .rang__nom { text-align: right; } }

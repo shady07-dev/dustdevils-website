@@ -1,0 +1,9 @@
+.pied { border-top: 2px dashed var(--couture); padding-block: 3rem 2rem; color: var(--brume); }
+.pied__grille { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem 2.5rem; }
+.pied__grille img { width: 6.5rem; }
+.pied__grille ul { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-left: auto; }
+.pied__titre { font: 400 1.4rem/1.3 var(--titre); color: var(--toile); }
+.pied a { text-underline-offset: 4px; text-decoration-color: var(--couture); }
+.pied a:hover { color: var(--toile); }
+.pied__note { margin-top: 2rem; max-width: calc(var(--largeur) + 2 * var(--gouttiere)); font-size: 0.9rem; }
+@media (max-width: 56rem) { .pied__grille ul { margin-left: 0; } }
